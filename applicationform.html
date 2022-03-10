@@ -1,0 +1,101 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Application Form</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<link rel="shortcut icon" href="logo.png">
+
+<script>
+  function helpme(){
+    if (mytext1.value=="") {
+      alert("Please enter your first name");
+      document.getElementById("mytext1").style.background="Red";
+      }
+    if (mytext2.value=="") {
+      alert("Please enter your second name");
+      document.getElementById("mytext2").style.background="Red";
+      }
+    if (mytext2.value=="") {
+      alert("Please enter your address");
+      document.getElementById("mytext3").style.background="Red";
+      }
+    if (mytext2.value=="") {
+      alert("Please enter your Mobile Number");
+      document.getElementById("mytext4").style.background="Red";
+      }
+  }
+</script>
+
+</head>
+
+<body>
+
+	<!--<script src="script.js"></script>-->
+
+	<section class="sec">
+		<header>
+			<a href="index.html"><img src="logo.png" class="logo"></a>
+     <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="formerwebdevlopers.html">Former Employees</a></li>
+      <li><a href="jobspecifications.html">Job Specifications</a></li>
+      <li><a href="Webdevlopmentcourses.html">Courses</a></li>
+      <li><a href="applicationform.html">Application Form</a></li>
+    </ul>
+   </header>
+    
+
+<table id="myTable" name="myTable" action="#" method="POST">
+<p></p>
+<tr>
+<td>Please enter your first name : </td>
+<td><input type="mytext1" id="mytext1"/></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>Please enter your second name : </td>
+<td><input type="mytext2" id="mytext2"/></td>
+</tr>
+<tr>
+<td>Please enter your address : </td>
+<td><textarea name="mytext3" id="mytext3" rows="8" cols="40"></textarea></td>
+</tr>
+<tr>
+    <td>Qualifications:</td>
+	<td>Level 3 National Diploma in IT : <input type="checkbox" name"Level 3  " id="level 
+  3"/>
+  </br>
+		Got Grade 5< in GCSE English : <input type="checkbox" name"Eng" id="Eng"/>
+    </br>
+		Got Grade 5< in GCSE Mathematics : <input type="checkbox" name"Math" id="Math"/>
+    </br>
+    Further Education In Relevent subject : <input type="checkbox" name"Further ed" id="Further ed"/>
+	</td>
+	</tr>
+<tr><td>Got a driving license? :</td>
+    <td>
+	Yes : <input type="radio" name="License" checked />
+	No : <input type="radio" name="License"/>
+   </td>
+</tr>
+<tr>
+<td>Mobile Number :</td>
+<td><input type="mytext4" id="mytext4"/></td>
+</tr>
+<tr>
+<td>Then click this button :</td>
+<td><input type="submit" onclick="helpme()" value="Submit Application Form"></td>
+</tr>
+<tr>
+</table>
+
+</body>
+
+</html>
